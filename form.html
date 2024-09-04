@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <div>
+    <form>
+        <h1 style="text-align: center;">Student Details Form</h1>
+        <label>Name :</label>
+        <input type="text" placeholder="Enter your name"/><br/>
+        <br/>
+
+        <label>Date of Birth :</label>
+        <input type="date"/>
+        <br/><br/>
+        <label>Age :</label>
+        <input type="number" placeholder="enter Your Age"/>
+        <br/><br/>
+        <label>College Name :</label>
+        <input type="text" placeholder="Enter Your College"/>
+        <br/><br/>
+        <label>Mobile no :</label>
+        <input type="number" placeholder="Enter ph Number"/>
+        <br/><br/>
+        <fieldset style="width:20%">
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male" value="male"/>
+            <label>Male</label><br/>
+            <input type="radio" name="gender" id="female" value="female"/>
+            <label>Female</label><br/>
+            
+    
+        </fieldset><br/>
+        <fieldset style="width:20%">
+            <legend>Skills</legend>
+            <input type="checkbox" name="Skills" id="Java" value="Java"/>
+            <label>Java</label>
+            <br/> 
+            <input type="checkbox" name="Skills" id="Html" value="Html"/>
+            <label>Html</label> 
+
+
+        </fieldset>
+
+        <br/>
+       <!-- dropdown -->
+        <label>Select Role :</label>
+        <Select id="role" name="role" required>
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+        </Select>
+        <br/><br/>
+
+
+        <!-- resume upload -->
+         <label>Resume :</label>
+         <input type="file" id="resume" name="resume" accept="pdf,doc,.docx" required/>
+         <br/> <br/>
+
+
+         <!-- email -->
+          <label>Email :</label>
+          <input type="email" id="email" required/><br/><br/>
+          <!-- password -->
+          <label>password :</label>
+          <input type="password" id="password" required/><br/><br/>
+          <!-- note -->
+           <label>Note :</label>
+           <textarea id="note" name="note" rows="4" cols="50"></textarea>
+           <br/><br/>
+
+           <!-- submit button -->
+            <input type="submit"/>
+           
+          
+
+
+
+    </form>
+</div>
+    
+</body>
+</html>
